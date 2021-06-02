@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_TEDIAcOGEeuYf-CMSCUWjg" label="P1" description="" language="java" technicalLabel="P1" author="_TEDIAsOGEeuYf-CMSCUWjg" productVersion="Talend Data Fabric-7.3.1.20210521_0803-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/talend-ppatel/talend-testing&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI">
+  <TalendProperties:Project xmi:id="_TEDIAcOGEeuYf-CMSCUWjg" label="P1" description="" language="java" technicalLabel="P1" author="_TEDIAsOGEeuYf-CMSCUWjg" productVersion="Talend Data Fabric-7.3.1.20210521_0803-patch" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/talend-ppatel/talend-testing&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DI" itemsRelationVersion="1.3">
     <migrationTask xmi:id="_TFQo8MOGEeuYf-CMSCUWjg" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_TEDIAsOGEeuYf-CMSCUWjg" login="admin@company.com" firstName="admin" lastName="admin" type="DQ" additionnalData="{}"/>

@@ -388,6 +388,11 @@
       <version>1.1</version>
     </dependency>
     <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>talendcsv</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
       <groupId>com.fasterxml.woodstox</groupId>
       <artifactId>woodstox-core</artifactId>
       <version>5.0.3</version>

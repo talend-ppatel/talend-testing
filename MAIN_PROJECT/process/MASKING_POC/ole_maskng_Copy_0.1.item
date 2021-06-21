@@ -47,7 +47,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:8slNudewT+Khk5OBWkXB69Q/4uBa1t6Z2l7GeB2t"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:kI4cWqBPbGVnSETahwk6TZygn5QNorbKR3o3rjZP"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -82,7 +82,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:44kyoAffGQCdUTrPRVexpFwQX11sKeeZf97jsocu"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:vDKPm1BypsSNcB3vNvFlMQqBX/1e/iwg1UH9mPTX"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -101,12 +101,7 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
-    <routinesParameter id="_CGRpcL4OEeuaM5z-ozhGXA" name="DQTechnical"/>
-    <routinesParameter id="_CFsaoL4OEeuaM5z-ozhGXA" name="DataMasking"/>
     <routinesParameter id="_CB9KIL4OEeuaM5z-ozhGXA" name="DataOperation"/>
-    <routinesParameter id="_CF_VkL4OEeuaM5z-ozhGXA" name="DataQualityDependencies"/>
-    <routinesParameter id="_CF2ysL4OEeuaM5z-ozhGXA" name="DataQuality"/>
-    <routinesParameter id="_CGJtoL4OEeuaM5z-ozhGXA" name="DqStringHandling"/>
     <routinesParameter id="_CDvS0L4OEeuaM5z-ozhGXA" name="Mathematical"/>
     <routinesParameter id="_CEA_oL4OEeuaM5z-ozhGXA" name="Numeric"/>
     <routinesParameter id="_CEL-wL4OEeuaM5z-ozhGXA" name="Relational"/>
@@ -120,7 +115,7 @@
   <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
     <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.var1"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/ppatel/Desktop/Book1.xlsx&quot;"/>
     <elementParameter field="CHECK" name="CSV_OPTION" value="true"/>
     <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
     <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
@@ -197,7 +192,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
+  <node componentName="tSortRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSortRow_1"/>
     <elementParameter field="TABLE" name="CRITERIA">
       <elementValue elementRef="COLNAME" value="Column0_1"/>
@@ -213,66 +208,25 @@
       <column comment="" key="true" length="22" name="Column0_1" nullable="true" originalDbColumnName="Column0" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tDataMasking" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDataMasking_1"/>
-    <elementParameter field="TABLE" name="MODIF_TABLE">
-      <elementValue elementRef="INPUT_COLUMN" value="Column0_1"/>
-      <elementValue elementRef="CATEGORY" value="CHARACTER_HANDLING"/>
-      <elementValue elementRef="FUNCTION" value="REPLACE_ALL"/>
-      <elementValue elementRef="METHOD" value="SHA2_HMAC_PRF"/>
-      <elementValue elementRef="ALPHABET" value="BEST_GUESS"/>
-      <elementValue elementRef="EXTRA_PARAMETER" value=""/>
-      <elementValue elementRef="KEEP_FORMAT" value="true"/>
-    </elementParameter>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:W8czEVz1PtmxSaVQIEjxkbd/UhwzzRu+MCRk2WU2Jx+P29vFfA=="/>
-    <elementParameter field="CHECK" name="USE_TWEAK" value="false"/>
-    <elementParameter field="TEXT" name="RANDOM_SEED" value="123456789"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;windows-1252&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="CUSTOM"/>
-    <elementParameter field="CHECK" name="OUTPUT_ORIGINAL" value="false"/>
-    <elementParameter field="CHECK" name="KEEP_NULL" value="false"/>
-    <elementParameter field="CHECK" name="KEEP_EMPTY" value="false"/>
-    <elementParameter field="CHECK" name="SEPERATE_OUTPUT" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="TECHNICAL" name="VALIDATION_RULE_TYPE:VALIDATION_RULE_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="VALIDATION_RULE_TYPE:REPOSITORY_VALIDATION_RULE_TYPE" show="false" value=""/>
-    <metadata connector="FLOW" label="metadata_ole" name="tDataMasking_1">
-      <column comment="" key="true" length="22" name="Column0_1" nullable="true" originalDbColumnName="Column0" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="FLOW_OUTPUT" label="metadata_ole" name="FLOW_OUTPUT">
-      <column comment="" key="true" length="22" name="Column0_1" nullable="true" originalDbColumnName="Column0" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="0" name="ORIGINAL_MARK" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="RAW" label="metadata_ole" name="RAW">
-      <column comment="" key="true" length="22" name="Column0_1" nullable="true" originalDbColumnName="Column0" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column key="false" length="0" name="ERROR_MESSAGE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="VALIDATION_REJECT" label="metadata_ole" name="VALIDATION_REJECT">
-      <column comment="" key="true" length="22" name="Column0_1" nullable="true" originalDbColumnName="Column0" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="AzureAdlsGen2Output" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="832" posY="96">
+  <node componentName="AzureAdlsGen2Output" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tAzureAdlsGen2Output_1"/>
     <elementParameter field="TECHNICAL" name="TACOKIT_COMPONENT_ID" show="false" value="YXp1cmUtZGxzLWdlbjIjQXp1cmUjQWRsc0dlbjJPdXRwdXQ"/>
-    <elementParameter field="TECHNICAL" name="TACOKIT_METADATA_TYPE_ID" show="false" value="YXp1cmUtZGxzLWdlbjIjQXp1cmUjZGF0YXN0b3JlI0FkbHNHZW4yQ29ubmVjdGlvbg"/>
-    <elementParameter field="TEXT" name="LABEL" value="vh"/>
-    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.connection.authMethod" value="ActiveDirectory"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.connection.accountName" value="abc"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.connection.endpointSuffix" value="windows.net"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.connection.tenantId" value=""/>
-    <elementParameter field="TEXT" name="configuration.dataSet.connection.clientId" value=""/>
-    <elementParameter field="PASSWORD" name="configuration.dataSet.connection.clientSecret" value=""/>
-    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.filesystem" value="clean"/>
-    <elementParameter field="TEXT" name="configuration.dataSet.blobPath" value="/Rosetta_OLE/Spain/Global/Associates/2021/06/21/"/>
+    <elementParameter field="CLOSED_LIST" name="configuration.dataSet.connection.authMethod" value="SharedKey"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.connection.accountName" value="&quot;shubhamadlsgen2&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.connection.endpointSuffix" value="dfs.core.windows.net"/>
+    <elementParameter field="PASSWORD" name="configuration.dataSet.connection.sharedKey" value="enc:system.encryption.key.v1:Uiovl4wg69iExEVz/Ry3x2Ta512sFTbVFKA5xgzzNy1AO8IlcQ2SW1OU5Esr1QahbFkD77gVANMf30QVQufUvwvDy90qambxJoXe6lkNXaYH0ZQ4LUZP8N8EpJcUtuzuvxXYvI07YEZUvE6UYWy2kwJXEVRGEA=="/>
+    <elementParameter field="TACOKIT_VALUE_SELECTION" name="configuration.dataSet.filesystem" value="shubhamfilesystem"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.blobPath" value="shubhamfilesystem/poojatesting"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.csvConfiguration.textEnclosureCharacter" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="configuration.dataSet.csvConfiguration.escapeCharacter" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="configuration.dataSet.csvConfiguration.header" value="true"/>
     <elementParameter field="TEXT" name="configuration.$maxBatchSize" value="1000"/>
     <elementParameter field="TEXT" name="configuration.dataSet.connection.timeout" value="600"/>
-    <elementParameter field="TEXT" name="configuration.blobNameTemplate" value="Associates-"/>
+    <elementParameter field="TEXT" name="configuration.blobNameTemplate" value="data-"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.__version" show="false" value="-1"/>
     <elementParameter field="TECHNICAL" name="configuration.dataSet.connection.__version" show="false" value="-1"/>
-    <metadata connector="FLOW" label="metadata_ole" name="tAzureAdlsGen2Output_1">
-      <column comment="" key="true" length="22" name="Column0_1" nullable="true" originalDbColumnName="Column0" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" name="tAzureAdlsGen2Output_1">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="LOOKUP" name="LOOKUP"/>
     <metadata connector="MERGE" name="MERGE"/>
@@ -291,11 +245,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Associate_id"/>
   </connection>
-  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tSortRow_1" offsetLabelX="0" offsetLabelY="0" source="tSortRow_1" target="tDataMasking_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
-  </connection>
-  <connection connectorName="FLOW_OUTPUT" label="row2" lineStyle="0" metaname="FLOW_OUTPUT" offsetLabelX="0" offsetLabelY="0" source="tDataMasking_1" target="tAzureAdlsGen2Output_1">
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tSortRow_1" offsetLabelX="0" offsetLabelY="0" source="tSortRow_1" target="tAzureAdlsGen2Output_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
@@ -304,13 +254,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fc8de45c-adbe-43a9-8093-8dbcfeb08e91"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1P2PB0r5T8WTaAxBiNEoosBXtJ2c5c+1iHUyZJzaGaVbXyTaBgNyRW1PIzF9nJZRjfcyiOjUeZIQ&#13;
-kzb6/VtE8Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_758e9376-b04f-467d-be8e-f3fb02b366f5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NmmDURgziiuG1hOP7Lgy9mCVGFahI77/justQJM9qkKktY+hDxdRSsLA7WBR2dL4eeoRgGTrXn6W&#13;
-3DvmH/BwBQ==</DigestValue></Reference></SignedInfo><SignatureValue>RJ5PqZGl2qAp5JzaufOgj8JUXWoBSNfdxRoHxnTMruKqLyOQoN70j4sExCg/u4V7jn7hov1FSXr6&#13;
-W2ES2jiNzkgBKfXnEWzhEJ3XpnrNdBu1tNdPWisv3nvpPMUt8cyvfjvrxcSIlfePzj2PZjhUbVO5&#13;
-RhKONSkccGKIwVC4VeRu2qWCiw+yvbDTUHzaT/ZdWxJQRJSEaPkD+niUgB295pYpcbOX5Bt9Z3bG&#13;
-bzLyqt1iRECkk6Y1ayv9DXxVndjkI26ONahywesitsGEWLNSGnSWPQ+0+Wrxo5h0BxzXiBoMJZYe&#13;
-e+wzNIFwNnTOttD53HgLhSwIwI/GDQwDhzW9xA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a2d6f16f-4294-4bc4-8d8f-ff00ab7ba192"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>GWdfSw4vZPvQA/RT1LRWcwWXWFWIUJA0LjNPxiLgtRQfM9ggX3QlNfPbK3jqPKpZ+4KspN9/L8Jh&#13;
+GEcAoiK+7w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_32626716-de4c-4d46-b858-bc505d6c4c91"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>z5BxDDznVcACp54slmSwWzZ1e50FjxRWpxVktZfqMGsjmL+5RvEbJeYYXOBQkOPJGC4H9O5Mjr+H&#13;
+3LxZvUXcPw==</DigestValue></Reference></SignedInfo><SignatureValue>llVkaBZi71fVJza99OZ+tLYkir4TPOLDZrs/y87MGCz7J6k7bpgW1y00FXm4wyBADzwvM/rh4MeR&#13;
+kPK3KOiUAEqetDdLW94pFRFVUuqhCl7mf83Or+JtW/xkSNOh4O/Ir+twaCiKmKuaLYDRPWunH8DI&#13;
+1pzaYcJTWGQPLVBTDJ8KJFNLf1i0IzOcY1pRkmR4UPuiqfdzx7kP2wceJG8iUnHpi/8FVwZ4qov0&#13;
+qr/Vf8SMvgOAHn3W/ITYwwT82ChhD2irndo3WBl3URfrAk5szNSc+o6N+YpzOGE3eYCxOe7SSRwO&#13;
+hOKgQpJerFd3104yf3iJMz1Za3V35UPmXQmZ6A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -332,4 +282,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_758e9376-b04f-467d-be8e-f3fb02b366f5" Target="#_fc8de45c-adbe-43a9-8093-8dbcfeb08e91"><Timestamp>2021-06-21 12:34:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_32626716-de4c-4d46-b858-bc505d6c4c91" Target="#_a2d6f16f-4294-4bc4-8d8f-ff00ab7ba192"><Timestamp>2021-06-21 12:37:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

@@ -5,4 +5,39 @@
     "type" : "job"
   },
   "relatedItems" : [ ]
+}, {
+  "baseItem" : {
+    "id" : "_SIIh8MnfEeuAg6JsAN8cSQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "DQTechnical",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataMasking",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataQuality",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DataQualityDependencies",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "DqStringHandling",
+    "version" : "Latest",
+    "type" : "routine"
+  }, {
+    "id" : "_O2R1IL6mEeuVy7DR4SBoIg - metadata_ole",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
 } ]
